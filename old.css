@@ -1,0 +1,74 @@
+html, body {
+    height: 100%; /* Ensure html and body take full viewport height */
+    margin: 0;
+    color: white;
+    background: linear-gradient(#1342c5, #bcc0ea);
+}
+
+header {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+}
+
+.main {
+    min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+}
+
+.text {
+    font-size: large;
+    padding: 0% 10% 0% 10%;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service {
+    padding: 0% 10% 20px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.card {
+    font-size: small;
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 30%;
+    width: 80%;
+}
+
+.card:hover {
+    opacity: 70%;
+    width: 81%;
+}
+
+.contacts {
+    font-size: xx-small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(25, 25, 25);
+}
