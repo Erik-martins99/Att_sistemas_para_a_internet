@@ -16,6 +16,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* espaço para o footer fixo */
+    padding-bottom: 160px;
 }
 
 /* HEADER */
@@ -89,30 +92,23 @@ img {
     background: rgba(0, 0, 0, 0.9);
 }
 
-/* FOOTER */
-/*.contacts {
-    width: 100%;
-    background-color: #191919;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 30px 20px;
-    gap: 20px;
-    margin-top: 30px;
-}*/
+/* FOOTER FIXO */
 .contacts {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     
-    background-color: #191919;
+    background: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(8px);
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 15px 20px;
-    
-    z-index: 1000; /* garante que fique por cima */
+
+    z-index: 1000;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .contacts div {
@@ -142,8 +138,17 @@ img {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+    
     .title {
         font-size: 1.5rem;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .text {
+        font-size: 0.9rem;
     }
 
     .service {
@@ -155,9 +160,31 @@ img {
         width: 90%;
     }
 
+    /* FOOTER MOBILE */
     .contacts {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contacts div {
+        max-width: 100%;
+    }
+
+    .contacts h3 {
+        font-size: 0.9rem;
+    }
+
+    .contacts p,
+    .contacts li,
+    .contacts a {
+        font-size: 0.7rem;
+    }
+
+    /* ajusta espaço do footer no mobile */
+    .container {
+        padding-bottom: 200px;
     }
 }
